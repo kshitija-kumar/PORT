@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #F2E7DC; 
+    color: #4A3C3C; 
+}
+
+h1, h2, h3, h4 {
+    color: #4A3C3C; 
+}
+
+.DownloadButton {
+    background-color: #D1BB9E; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.DownloadButton:hover {
+    background-color: #A79277; 
+    transform: scale(1.05);
+}
+
+h2, h3 {
+    margin: 20px 0; 
+}

@@ -1,0 +1,60 @@
+.AboutContainer {
+    padding: 40px;
+    background-color: #D1BB9E;
+    text-align: center;
+}
+
+.SkillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.SkillItem {
+    background-color: #6F4F4B;
+    color: #FFFFFF; 
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s; 
+}
+
+.SkillItem:hover {
+    background-color: #D1BB9E; 
+}
+
+.CertificateButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.DownloadButton {
+    margin: 10px 0;
+    padding: 15px 30px;
+    background-color: #4A3C3C; 
+    color: #FFFFFF; 
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.DownloadButton:hover {
+    background-color: #6F4F4B; 
+}
+
+@media (max-width: 768px) {
+    .SkillsList {
+        flex-direction: column; 
+    }
+
+    .DownloadButton {
+        width: 100%; 
+    }
+}

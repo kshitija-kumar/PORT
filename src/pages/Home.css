@@ -1,0 +1,31 @@
+.HomeContainer {
+    padding: 60px;
+    background-color: #E1D4D4; 
+    text-align: center;
+}
+
+.HomeTitle {
+    color: #A79277; 
+    margin-bottom: 20px;
+}
+
+.HomeDescription {
+    color: #AD8C7D; 
+    margin-bottom: 30px;
+    font-size: 20px;
+
+.DownloadButton {
+    background-color: #D1BB9E; 
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.DownloadButton:hover {
+    background-color: #A79277;
+    transform: scale(1.05);
+}
