@@ -11,9 +11,9 @@ const SkillItem = motion.div;
 
 function About() {
     return (
-        <div className="AboutContainer">
-            <h2>About Me</h2>
-            <h3>My Skills</h3>
+        <div className="AboutContainer" style={{ height: '100vh', width: '100vw' }}>
+            <h2 style={{ margin: '0' }}>About Me</h2>
+            <h3 style={{ margin: '0' }}>My Skills</h3>
             <div className="SkillsList">
                 {skills.map((skill, index) => (
                     <SkillItem key={index} initial={{ scale: 1 }} whileHover={{ scale: 1.1 }} className="SkillItem">
@@ -22,7 +22,7 @@ function About() {
                 ))}
             </div>
 
-            <h3>My Certificates</h3>
+            <h3 style={{ margin: '0' }}>My Certificates</h3>
             <div className="CertificateButtons">
                 <Link to="/certificates/academic" className="DownloadButton">
                     View Academic Certificates

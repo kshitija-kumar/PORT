@@ -3,13 +3,16 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const PortfolioContainer = styled(motion.div)`
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
     padding: 40px;
-    background-color: #D1BB9E; 
+    background: linear-gradient(135deg, #000000, #4B0082, #0000FF); /* Gradient from black to indigo to blue */
     text-align: center;
+    overflow: hidden; /* Prevent overflow */
 `;
 
 const ProjectCard = styled.div`
-    background-color: #F5E5D2; 
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for contrast */
     border: 1px solid #E4E4E4;
     border-radius: 8px;
     padding: 20px;
@@ -36,11 +39,11 @@ function Portfolio() {
             animate="visible"
             variants={slideIn}
         >
-            <h2 style={{ color: '#4A3C3C' }}>My Projects</h2>
+            <h2 style={{ color: '#FFFFFF' }}>My Projects</h2> {/* White text for better visibility */}
             {projects.map((project, index) => (
                 <ProjectCard key={index}>
-                    <h3 style={{ color: '#4A3C3C' }}>{project.title}</h3> 
-                    <p style={{ color: '#4A3C3C' }}>{project.description}</p>
+                    <h3 style={{ color: '#FFFFFF' }}>{project.title}</h3> {/* White text for project titles */}
+                    <p style={{ color: '#FFFFFF' }}>{project.description}</p> {/* White text for project descriptions */}
                 </ProjectCard>
             ))}
         </PortfolioContainer>

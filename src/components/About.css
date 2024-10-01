@@ -1,7 +1,15 @@
-.AboutContainer {
+.AboutContainer { 
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
     padding: 40px;
-    background-color: #D1BB9E;
+    background: linear-gradient(135deg, #000000, #4B0082, #0000FF); /* Gradient from black to indigo to blue */
     text-align: center;
+    color: #FFFFFF; /* White text for contrast */
+    overflow: hidden; /* Prevent overflow if content exceeds */
+}
+
+h2, h3 {
+    color: #FFFFFF; /* White text for headings */
 }
 
 .SkillsList {
@@ -11,9 +19,8 @@
     margin-bottom: 30px;
 }
 
-
 .SkillItem {
-    background-color: #6F4F4B;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for skill items */
     color: #FFFFFF; 
     padding: 15px 25px;
     border-radius: 10px;
@@ -22,7 +29,7 @@
 }
 
 .SkillItem:hover {
-    background-color: #D1BB9E; 
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter background on hover */
 }
 
 .CertificateButtons {
@@ -35,18 +42,19 @@
 .DownloadButton {
     margin: 10px 0;
     padding: 15px 30px;
-    background-color: #4A3C3C; 
+    background: linear-gradient(135deg, #0000FF, #4B0082); /* Gradient from blue to indigo */
     color: #FFFFFF; 
     text-decoration: none;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
     width: 250px; 
-    transition: background-color 0.3s, transform 0.3s; 
+    transition: background 0.3s, transform 0.3s; 
+    border: none; /* Remove border */
 }
 
 .DownloadButton:hover {
-    background-color: #6F4F4B; 
+    background: linear-gradient(135deg, #4B0082, #0000FF); /* Reverse gradient on hover */
 }
 
 @media (max-width: 768px) {

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'; 
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Navbar = styled.nav`
-    background-color: #A79277; 
-    color: #FFFFFF; 
+    background: linear-gradient(135deg, #C2C2E8, #E3E3E3); 
+    color: #6a11cb; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,35 +20,40 @@ const Logo = styled.h1`
 const NavLinks = styled.div`
     display: flex;
     gap: 25px; 
+
+    @media (max-width: 768px) {
+        flex-direction: column; 
+        align-items: center; 
+    }
 `;
 
 const NavLink = styled(Link)`
-    color: #FFFFFF; /* White text for links */
+    color: #6a11cb; 
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem; /* Increased font size for links */
-    position: relative; /* For hover effect */
+    font-size: 1.2rem; 
+    position: relative; 
     transition: color 0.3s;
 
     &:hover {
-        color: #D1BB9E; /* Soft beige on hover */
+        color: #6a11cb; 
     }
 
     &:after {
         content: '';
         display: block;
-        height: 2px; /* Height of underline */
-        background: #D1BB9E; /* Soft beige underline color */
-        width: 0; /* Initial width */
-        transition: width 0.3s; /* Smooth transition */
-        position: absolute; /* Positioning for underline */
-        left: 50%; /* Center the underline */
-        bottom: -5px; /* Position it below the text */
-        transform: translateX(-50%); /* Center adjustment */
+        height: 2px; 
+        background: #6a11cb; 
+        width: 0; 
+        transition: width 0.3s; 
+        position: absolute; 
+        left: 50%; 
+        bottom: -5px; 
     }
 
     &:hover:after {
-        width: 100%; /* Full width on hover */
+        width: 100%; 
+        left: 0; 
     }
 `;
 

@@ -1,23 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-    /* Global Reset */
-    * {
+    body {
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #C2C2E8, #E3E3E3); /* Gradient background */
     }
 
-    html, body {
-        height: 100%;
-        font-family: 'Poppins', sans-serif;
-        background-color: #F2E7DC; 
-        color: #4A3C3C; 
-        line-height: 1.6;
-        scroll-behavior: smooth;
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
     }
-
-    /* Other styles... */
 `;
 
 export default GlobalStyles;

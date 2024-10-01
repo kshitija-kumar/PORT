@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 
 const styles = {
     container: {
+        height: '100vh', // Full height
+        width: '100vw', // Full width
         padding: '60px',
-        backgroundColor: '#D1BB9E', 
+        background: 'linear-gradient(135deg, #000000, #4B0082, #0000FF)', // Gradient background
         textAlign: 'center',
+        overflow: 'hidden', // Prevent overflow
     },
     title: {
-        color: '#4A3C3C', 
+        color: '#FFFFFF', // White text for better visibility
         marginBottom: '40px',
         fontSize: '2.5rem', 
     },
@@ -21,25 +24,25 @@ const styles = {
         maxWidth: '400px', 
         padding: '15px',
         margin: '10px 0',
-        border: '2px solid #AD8C7D', 
+        border: '2px solid #FFFFFF', // White for contrast
         borderRadius: '8px',
         transition: 'border-color 0.3s',
-        color: '#4A3C3C', 
-        backgroundColor: '#F5E5D2', 
+        color: '#FFFFFF', // White text for better visibility
+        background: 'rgba(255, 255, 255, 0.1)', 
     },
     textarea: {
         width: '80%',
         maxWidth: '400px',
         padding: '15px',
         margin: '10px 0',
-        border: '2px solid #AD8C7D', 
+        border: '2px solid #FFFFFF', // White for contrast
         borderRadius: '8px',
         transition: 'border-color 0.3s',
-        color: '#4A3C3C', 
-        backgroundColor: '#F5E5D2', 
+        color: '#FFFFFF', // White text for better visibility
+        background: 'rgba(255, 255, 255, 0.1)', 
     },
     button: {
-        backgroundColor: '#A79277', 
+        background: 'linear-gradient(135deg, #0000FF, #4B0082)', // Gradient background for the button
         color: '#FFFFFF',
         padding: '15px 30px',
         border: 'none',

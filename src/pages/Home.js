@@ -6,7 +6,7 @@ const Container = styled(motion.div)`
     display: flex;
     align-items: center;
     height: 100vh;
-    background-color: #FAF7F0;
+    background: linear-gradient(135deg, #000000, #4B0082, #0000FF); /* Gradient from black to indigo to blue */
     padding: 0 20px;
 `;
 
@@ -17,19 +17,19 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.h1`
-    color: #A79277;
+    color: #FFFFFF; /* White title */
     margin-bottom: 20px;
     font-size: 3rem;
 `;
 
 const Description = styled.p`
-    color: #2F3645;
+    color: #FAF7F0; /* Light text color */
     margin-bottom: 30px;
     font-size: 1.5rem;
 `;
 
 const DownloadButton = styled.a`
-    background-color: #A79277;
+    background-color: #0000FF; /* Blue button */
     color: #FFFFFF;
     padding: 15px 30px;
     border-radius: 10px;
@@ -41,7 +41,7 @@ const DownloadButton = styled.a`
     cursor: pointer;
 
     &:hover {
-        background-color: #D1BB9E;
+        background-color: #4B0082; /* Indigo on hover */
         transform: scale(1.05);
     }
 `;
@@ -66,9 +66,9 @@ function Home() {
                     Download My Resume
                 </DownloadButton>
             </TextContainer>
-            <ImageContainer>
+            {/* <ImageContainer>
                 <BackgroundImage src="/my_photo.jpeg" alt="My Photo" />
-            </ImageContainer>
+            </ImageContainer> */}
         </Container>
     );
 }
