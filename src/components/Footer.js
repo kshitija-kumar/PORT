@@ -13,7 +13,6 @@ const FooterContainer = styled.footer`
 `;
 
 function Footer() {
-    return <FooterContainer>© 2024 My Portfolio. All rights reserved.</FooterContainer>;
 }
 
 export default Footer;
